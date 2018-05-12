@@ -1,5 +1,13 @@
 # 排序
 ---
+已知：每页显示m条数据，当前显示第n页
+- 求总页数：此段逻辑后面会在python中实现
+ - 查询总条数p1
+ - 使用p1除以m得到p2
+ - 如果整除则p2为总数页
+ - 如果不整除则p2+1为总页数
+- 求第n页的数据：`select * from students where is_delete=0 limit (n-1)*m,m`
+---
 
 ## 排序
 
@@ -25,3 +33,18 @@ group by
 group by + group_concat()
 - group_concat(字段名)可以作为一个输出字段来使用，
 - 表示分组之后，根据分组结果，使用group_concat()来放置每一组的某字段的值的集合
+
+group by + 集合函数
+
+通过group_concat()的启发，我们既然可以统计出每个分组的某字段的值的集合，那么我们也可以通过集合函数来对这个`值的集合`做一些操作
+
+group by + having
+- having 条件表达式：用来分组查询后指定一些条件来输出查询结果
+- having作用和where一样，但having只能用于group by
+
+group by + with rollup
+- with rollup的作用是：在最后新增一行，来记录当前列里所有记录的总和
+
+## 分页
+语法：`select * from 表名 limit start,count`（从start开始，获取count条数据）
+
