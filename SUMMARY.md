@@ -27,6 +27,7 @@
   * [查询](mysql/cha-xun.md)
     * [条件](mysql/cha-xun/tiao-jian.md)
     * [排序、聚合、分组、分页](mysql/cha-xun/pai-xu.md)
+    * [连接、自关联、子查询](mysql/cha-xun/lian-jie-3001-zi-guan-lian-3001-zi-cha-xun.md)
 * [MySQL高级](mysqlgao-ji.md)
 * [Python高级](pythongao-ji.md)
 * [闭包、装饰器](bi-bao-3001-zhuang-shi-qi.md)
