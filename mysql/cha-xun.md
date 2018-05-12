@@ -15,7 +15,9 @@
 - 自关联
 - 子查询
 ---
-格式
+## 总结
+实际使用中，只是语句中某些部分的组合，而不是全部
+### 格式
 
 
 ```
@@ -28,7 +30,7 @@ SELECT select_expr [,select_expr,...] [
       [ LIMIT {[offset,]rowcount | row_count OFFSET offset}]
 ]
 ```
-完整select语句
+### 完整select语句
 
 
 ```
@@ -39,7 +41,7 @@ group by ... having ...
 order by ...
 limit start,count
 ```
-执行顺序
+### 执行顺序
 - from 表名
 - where ....
 - group by ...
@@ -47,5 +49,6 @@ limit start,count
 - having ...
 - order by ...
 - limit start,count
+
 
 
