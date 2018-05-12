@@ -5,7 +5,14 @@
 * [网络-UDP](wang-7edc-udp.md)
   * [IP地址、端口](wang-7edc-udp/duan-kou.md)
   * [UDP网络程序-发送、接收数据](wang-7edc-udp/udpwang-luo-cheng-5e8f-fa-song-3001-jie-shou-shu-ju.md)
-* [网络-tcp](wang-7edc-tcp.md)
+  * [UDP绑定端口问题](wang-7edc-udp/udpbang-ding-duan-kou-wen-ti.md)
+* [网络-TCP](wang-7edc-tcp.md)
+  * [TCP网络程序-客户端](wang-7edc-tcp/tcpwang-luo-cheng-5e8f-ke-hu-duan.md)
+  * [TCP网络程序-服务器](wang-7edc-tcp/tcpwang-luo-cheng-5e8f-fu-wu-qi.md)
+  * [TCP注意点](wang-7edc-tcp/tcpzhu-yi-dian.md)
+  * [TCP的3次握手](wang-7edc-tcp/tcpde-3-ci-wo-shou.md)
+  * TCP的4次挥手
+  * TCP长连接和短连接
 * [多任务](chapter1.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
 * [http协议](httpxie-yi.md)
