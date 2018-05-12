@@ -10,9 +10,8 @@
   * [TCP网络程序-客户端](wang-7edc-tcp/tcpwang-luo-cheng-5e8f-ke-hu-duan.md)
   * [TCP网络程序-服务器](wang-7edc-tcp/tcpwang-luo-cheng-5e8f-fu-wu-qi.md)
   * [TCP注意点](wang-7edc-tcp/tcpzhu-yi-dian.md)
-  * [TCP的3次握手](wang-7edc-tcp/tcpde-3-ci-wo-shou.md)
-  * TCP的4次挥手
-  * TCP长连接和短连接
+  * [TCP的3次握手、4次挥手](wang-7edc-tcp/tcpde-3-ci-wo-shou.md)
+  * [TCP长连接和短连接](wang-7edc-tcp/tcpchang-lian-jie-he-duan-lian-jie.md)
 * [多任务](chapter1.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
 * [http协议](httpxie-yi.md)
