@@ -13,3 +13,14 @@
 ## 查询基本使用 
  - 查询所有列：`select * from 表名;`
  - 查询指定列：`select 列1,列2,... from 表名;`，可以使用as为列或表指定别名  
+
+## 修改
+
+
+```
+update 表名 set 列1=值1,列2=值2... where 条件
+```
+
+## 删除
+ - 物理删除：`delete from 表名 where 条件`
+ - 逻辑删除：`update students set isdelete=1 where id=1;`
