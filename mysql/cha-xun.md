@@ -15,5 +15,37 @@
 - 自关联
 - 子查询
 ---
+格式
+
+
+```
+SELECT select_expr [,select_expr,...] [      
+      FROM tb_name
+      [WHERE 条件判断]
+      [GROUP BY {col_name | postion} [ASC | DESC], ...] 
+      [HAVING WHERE 条件判断]
+      [ORDER BY {col_name|expr|postion} [ASC | DESC], ...]
+      [ LIMIT {[offset,]rowcount | row_count OFFSET offset}]
+]
+```
+完整select语句
+
+
+```
+select distinct *
+from 表名
+where ....
+group by ... having ...
+order by ...
+limit start,count
+```
+执行顺序
+- from 表名
+- where ....
+- group by ...
+- select distinct *
+- having ...
+- order by ...
+- limit start,count
 
 
