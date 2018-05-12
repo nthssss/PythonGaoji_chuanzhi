@@ -43,7 +43,7 @@ create table areas(
 ## 子查询
 
 
-
+语法
 ```
 主查询 where 条件 in (列子查询)
 ```
