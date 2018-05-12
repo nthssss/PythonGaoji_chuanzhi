@@ -24,3 +24,4 @@ update 表名 set 列1=值1,列2=值2... where 条件
 ## 删除
  - 物理删除：`delete from 表名 where 条件`
  - 逻辑删除：`update students set isdelete=1 where id=1;`
+  - 本质是修改操作，修改isdelete值为1。
