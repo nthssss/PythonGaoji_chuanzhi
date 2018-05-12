@@ -25,6 +25,7 @@
     * [数据表操作](mysql/shu-ju-biao-cao-zuo.md)
     * [数据操作](mysql/shu-ju-cao-zuo.md)
   * [查询](mysql/cha-xun.md)
+    * [条件](mysql/cha-xun/tiao-jian.md)
 * [MySQL高级](mysqlgao-ji.md)
 * [Python高级](pythongao-ji.md)
 * [闭包、装饰器](bi-bao-3001-zhuang-shi-qi.md)
