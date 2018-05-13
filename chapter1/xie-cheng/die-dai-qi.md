@@ -6,7 +6,7 @@
 
 ```
 '''
-# 判断前面的对象是否是后面指定的类型
+## 判断前面的对象是否是后面指定的类型
 isinstance(3, float)
 '''
 from collections import Iterable
@@ -15,7 +15,7 @@ def func(name, obj):
     flag = isinstance(obj, Iterable)
     print("%s是否是一个可迭代对象:%s" % (name, flag))
 
-# 自定义类
+## 自定义类
 class StudentList(object):
     pass
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     func("int", 1)
     func("自定义对象", StudentList())
 ```
-# 通过迭代器获取斐波那契数列
+## 通过迭代器获取斐波那契数列
 
 
 ```
