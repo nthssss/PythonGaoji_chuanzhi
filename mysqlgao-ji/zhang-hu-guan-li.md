@@ -70,6 +70,10 @@ delete from user where user='用户名';
 -- 操作结束之后需要刷新权限
 flush privileges
 ```
+##远程登陆：
+- 配置文件中注释`bind_address、skip_netwroking参数`
+- 重启mysql`service mysql restart`
+
 
 
 
