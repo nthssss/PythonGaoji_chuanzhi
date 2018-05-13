@@ -60,11 +60,6 @@ if __name__ == '__main__':
     fib = Fibonacci(10)
     # 启动迭代器
     # print(next(fib))
-    # print(next(fib))
-    # print(next(fib))
-    # print(next(fib))
-    # print(next(fib))
-    # print(next(fib))
     for i in fib:
         print(i)
 
