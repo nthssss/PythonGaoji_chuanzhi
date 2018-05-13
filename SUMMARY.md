@@ -18,7 +18,7 @@
   * [浏览器和服务器之间的交互](httpxie-yi/liu-lan-qi-he-fu-wu-qi-zhi-jian-de-jiao-hu.md)
 * [多任务](chapter1.md)
   * [进程](chapter1/jin-cheng.md)
-  * 线程
+  * [线程](chapter1/xian-cheng.md)
   * 协程
 * [正则表达式](zheng-ze-biao-da-shi.md)
   * [re模块使用](zheng-ze-biao-da-shi/remo-kuai-shi-yong.md)
