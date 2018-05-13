@@ -31,6 +31,7 @@
   * [数据库设计](mysql/shu-ju-ku-she-ji.md)
 * [MySQL高级](mysqlgao-ji.md)
   * [视图、事务、索引](mysqlgao-ji/shi-tu.md)
+  * 账户管理
 * [Python高级](pythongao-ji.md)
 * [闭包、装饰器](bi-bao-3001-zhuang-shi-qi.md)
 
