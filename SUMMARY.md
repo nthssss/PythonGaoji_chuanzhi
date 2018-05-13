@@ -20,6 +20,7 @@
 * [正则表达式](zheng-ze-biao-da-shi.md)
   * [re模块使用](zheng-ze-biao-da-shi/remo-kuai-shi-yong.md)
   * [匹配](zheng-ze-biao-da-shi/pi-pei.md)
+  * [贪婪与非贪婪、r](zheng-ze-biao-da-shi/tan-lan-yu-fei-tan-lan-3001-r.md)
 * [MySQL](mysql.md)
   * [命令行脚本](mysql/ming-ling-xing-jiao-ben.md)
     * [基本使用](mysql/chang-yong-cao-zuo.md)
