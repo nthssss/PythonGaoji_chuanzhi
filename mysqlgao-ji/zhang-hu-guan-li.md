@@ -73,6 +73,7 @@ flush privileges
 ##远程登陆：
 - 配置文件中注释`bind_address、skip_netwroking参数`
 - 重启mysql`service mysql restart`
+- 另一个mysql客户端中连接：`mysql -h主机ip -u用户名 -p主机名`
 
 
 
