@@ -30,4 +30,44 @@ if __name__ == '__main__':
     func("int", 1)
     func("自定义对象", StudentList())
 ```
+# 通过迭代器获取斐波那契数列
+
+
+```
+class Fibonacci(object):
+    def __init__(self, num):
+        self.num = num
+        # 定义两个变量 保存 0 和 1
+        self.a = 0
+        self.b = 1
+        # 记录迭代次数
+        self.current_index = 0
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.current_index < self.num:
+            self.current_index += 1
+            result = self.a
+            self.a, self.b = self.b, self.a + self.b
+            return result
+        else:
+            # 抛出异常
+            raise StopIteration
+
+if __name__ == '__main__':
+    # 通过Fibonacci创建一个迭代器对象
+    fib = Fibonacci(10)
+    # 启动迭代器
+    # print(next(fib))
+    # print(next(fib))
+    # print(next(fib))
+    # print(next(fib))
+    # print(next(fib))
+    # print(next(fib))
+    for i in fib:
+        print(i)
+
+```
+
 
