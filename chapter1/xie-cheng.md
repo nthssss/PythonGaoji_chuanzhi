@@ -8,4 +8,36 @@
 
 ---
 
- 
+## next()使用协程：`next(生成器)`
+## greenlet使用协程:
+
+
+```
+import greenlet, time
+
+# 任务
+def work1():
+    while True:
+        print("工作1...")
+        #　使用协程吧任务切换
+        g2.switch()
+        time.sleep(0.1)
+
+# 任务
+def work2():
+    while True:
+        print("工作2...")
+        # 使用协程吧任务切换
+        g1.switch()
+        time.sleep(0.1)
+
+if __name__ == '__main__':
+
+    # 创建协程
+    g1 = greenlet.greenlet(work1)
+    g2 = greenlet.greenlet(work2)
+
+    # 启动协程
+    g1.switch()
+```
+
