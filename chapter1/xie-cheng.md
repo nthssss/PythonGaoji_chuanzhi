@@ -8,7 +8,28 @@
 
 ---
 
-## next()使用协程：`next(生成器)`
+## next()使用协程：
+`next(生成器)`
+
+
+```
+"""
+如果一个函数中出现了 return 数值  -> 有返回值的函数
+如果一个函数中出现了 yield 数值 -> 生成器
+"""
+if __name__ == '__main__':
+    # 生成器对象
+    fib = fibonacci(5)
+    # 启动生成器
+    # print(next(fib))
+    # print(next(fib))
+    # print(next(fib))
+    # print(next(fib))
+    # for i in fib:
+    #     print(i)
+```
+
+
 ## greenlet使用协程:
 
 
