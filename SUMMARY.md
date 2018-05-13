@@ -40,6 +40,6 @@
 * [MySQL高级](mysqlgao-ji.md)
   * [视图、事务、索引](mysqlgao-ji/shi-tu.md)
   * [账户管理](mysqlgao-ji/zhang-hu-guan-li.md)
-* [Python高级](pythongao-ji.md)
+* [Python提高](pythongao-ji.md)
 * [闭包、装饰器](bi-bao-3001-zhuang-shi-qi.md)
 

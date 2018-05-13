@@ -2,7 +2,7 @@
 ---
 ##进程模块：multiprocessing
 - 创建进程：
- - `进程=multiprocessing.Process(target=任务函数引用)`
+ - `进程=multiprocessing.Process(target=任务函数名)`
 - 启动进程（启动进程(就绪状态) -> 等待cpu调度执行任务）：
  - `进程.start()`
 - 获取当前这个进程的父进程编号:
@@ -14,7 +14,7 @@
 - 立即停止子进程执行的任务
  - `子进程.terminate()`
 - 阻塞当前进程，直到调用join方法的那个进程执行完，再继续执行当前进程。
- - `进程.join`
+ - `进程.join()`
 
 多进程无法共享全局变量
 
