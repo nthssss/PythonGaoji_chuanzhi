@@ -1,0 +1,873 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>闭包、装饰器 | 感谢雷哥提供的复习大纲</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="./pythongao-ji.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="10"
+        data-chapter-title="闭包、装饰器"
+        data-filepath="bi-bao-3001-zhuang-shi-qi.md"
+        data-basepath="."
+        data-revision="Sun May 13 2018 19:34:29 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="pythongao-ji-hui-gu.html">
+            
+                
+                    <a href="./pythongao-ji-hui-gu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        复习大纲
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="wang-7edc-udp.html">
+            
+                
+                    <a href="./wang-7edc-udp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        网络-UDP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="wang-7edc-udp/duan-kou.html">
+            
+                
+                    <a href="./wang-7edc-udp/duan-kou.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        IP地址、端口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="wang-7edc-udp/udpwang-luo-cheng-5e8f-fa-song-3001-jie-shou-shu-ju.html">
+            
+                
+                    <a href="./wang-7edc-udp/udpwang-luo-cheng-5e8f-fa-song-3001-jie-shou-shu-ju.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        UDP网络程序-发送、接收数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="wang-7edc-udp/udpbang-ding-duan-kou-wen-ti.html">
+            
+                
+                    <a href="./wang-7edc-udp/udpbang-ding-duan-kou-wen-ti.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        UDP绑定端口问题
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="wang-7edc-tcp.html">
+            
+                
+                    <a href="./wang-7edc-tcp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        网络-TCP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="wang-7edc-tcp/tcpwang-luo-cheng-5e8f-ke-hu-duan.html">
+            
+                
+                    <a href="./wang-7edc-tcp/tcpwang-luo-cheng-5e8f-ke-hu-duan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        TCP网络程序-客户端
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="wang-7edc-tcp/tcpwang-luo-cheng-5e8f-fu-wu-qi.html">
+            
+                
+                    <a href="./wang-7edc-tcp/tcpwang-luo-cheng-5e8f-fu-wu-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        TCP网络程序-服务器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="wang-7edc-tcp/tcpzhu-yi-dian.html">
+            
+                
+                    <a href="./wang-7edc-tcp/tcpzhu-yi-dian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        TCP注意点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="wang-7edc-tcp/tcpde-3-ci-wo-shou.html">
+            
+                
+                    <a href="./wang-7edc-tcp/tcpde-3-ci-wo-shou.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        TCP的3次握手、4次挥手
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="wang-7edc-tcp/tcpchang-lian-jie-he-duan-lian-jie.html">
+            
+                
+                    <a href="./wang-7edc-tcp/tcpchang-lian-jie-he-duan-lian-jie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        TCP长连接和短连接
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="httpxie-yi.html">
+            
+                
+                    <a href="./httpxie-yi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        HTTP协议
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="httpxie-yi/httpxie-yi.html">
+            
+                
+                    <a href="./httpxie-yi/httpxie-yi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        HTTP协议
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="httpxie-yi/fang-wen-baidu-com-de-guo-cheng.html">
+            
+                
+                    <a href="./httpxie-yi/fang-wen-baidu-com-de-guo-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        访问baidu.com的过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="httpxie-yi/liu-lan-qi-he-fu-wu-qi-zhi-jian-de-jiao-hu.html">
+            
+                
+                    <a href="./httpxie-yi/liu-lan-qi-he-fu-wu-qi-zhi-jian-de-jiao-hu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        浏览器和服务器之间的交互
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        多任务
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chapter1/jin-cheng.html">
+            
+                
+                    <a href="./chapter1/jin-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        进程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chapter1/xian-cheng.html">
+            
+                
+                    <a href="./chapter1/xian-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        线程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="chapter1/xie-cheng.html">
+            
+                
+                    <a href="./chapter1/xie-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        协程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="chapter1/xie-cheng/die-dai-qi.html">
+            
+                
+                    <a href="./chapter1/xie-cheng/die-dai-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                        迭代器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="chapter1/xie-cheng/sheng-cheng-qi.html">
+            
+                
+                    <a href="./chapter1/xie-cheng/sheng-cheng-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                        生成器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="zheng-ze-biao-da-shi.html">
+            
+                
+                    <a href="./zheng-ze-biao-da-shi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        正则表达式
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="zheng-ze-biao-da-shi/remo-kuai-shi-yong.html">
+            
+                
+                    <a href="./zheng-ze-biao-da-shi/remo-kuai-shi-yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        re模块使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="zheng-ze-biao-da-shi/pi-pei.html">
+            
+                
+                    <a href="./zheng-ze-biao-da-shi/pi-pei.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        匹配
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="zheng-ze-biao-da-shi/tan-lan-yu-fei-tan-lan-3001-r.html">
+            
+                
+                    <a href="./zheng-ze-biao-da-shi/tan-lan-yu-fei-tan-lan-3001-r.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        贪婪与非贪婪、r
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="mysql.html">
+            
+                
+                    <a href="./mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        MySQL
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="mysql/ming-ling-xing-jiao-ben.html">
+            
+                
+                    <a href="./mysql/ming-ling-xing-jiao-ben.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        命令行脚本
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="mysql/chang-yong-cao-zuo.html">
+            
+                
+                    <a href="./mysql/chang-yong-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.1.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="mysql/shu-ju-ku-cao-zuo.html">
+            
+                
+                    <a href="./mysql/shu-ju-ku-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.2.</b>
+                        
+                        数据库操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="mysql/shu-ju-biao-cao-zuo.html">
+            
+                
+                    <a href="./mysql/shu-ju-biao-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.3.</b>
+                        
+                        数据表操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="mysql/shu-ju-cao-zuo.html">
+            
+                
+                    <a href="./mysql/shu-ju-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.4.</b>
+                        
+                        数据操作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="mysql/cha-xun.html">
+            
+                
+                    <a href="./mysql/cha-xun.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        查询
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="mysql/cha-xun/tiao-jian.html">
+            
+                
+                    <a href="./mysql/cha-xun/tiao-jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.1.</b>
+                        
+                        条件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.2" data-path="mysql/cha-xun/pai-xu.html">
+            
+                
+                    <a href="./mysql/cha-xun/pai-xu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.2.</b>
+                        
+                        排序、聚合、分组、分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.3" data-path="mysql/cha-xun/lian-jie-3001-zi-guan-lian-3001-zi-cha-xun.html">
+            
+                
+                    <a href="./mysql/cha-xun/lian-jie-3001-zi-guan-lian-3001-zi-cha-xun.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.3.</b>
+                        
+                        连接、自关联、子查询
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="mysql/shu-ju-ku-she-ji.html">
+            
+                
+                    <a href="./mysql/shu-ju-ku-she-ji.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        数据库设计
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="mysqlgao-ji.html">
+            
+                
+                    <a href="./mysqlgao-ji.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        MySQL高级
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="mysqlgao-ji/shi-tu.html">
+            
+                
+                    <a href="./mysqlgao-ji/shi-tu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        视图、事务、索引
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="mysqlgao-ji/zhang-hu-guan-li.html">
+            
+                
+                    <a href="./mysqlgao-ji/zhang-hu-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        账户管理
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="pythongao-ji.html">
+            
+                
+                    <a href="./pythongao-ji.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Python提高
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="10" data-path="bi-bao-3001-zhuang-shi-qi.html">
+            
+                
+                    <a href="./bi-bao-3001-zhuang-shi-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        闭包、装饰器
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >感谢雷哥提供的复习大纲</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x95ED;&#x5305;&#x3001;&#x88C5;&#x9970;&#x5668;">&#x95ED;&#x5305;&#x3001;&#x88C5;&#x9970;&#x5668;</h1>
+<hr>
+<ul>
+<li>&#x95ED;&#x5305;</li>
+<li>&#x88C5;&#x9970;&#x5668;</li>
+</ul>
+<hr>
+<h2 id="&#x95ED;&#x5305;">&#x95ED;&#x5305;</h2>
+<pre><code># &#x5916;&#x90E8;&#x51FD;&#x6570;
+def outer(start=0):
+    count = [start]  # &#x51FD;&#x6570;&#x5185;&#x7684;&#x53D8;&#x91CF;
+    # &#x5185;&#x90E8;&#x51FD;&#x6570;
+    def inner():
+        count[0] += 1  # &#x5F15;&#x7528;&#x5916;&#x90E8;&#x51FD;&#x6570;&#x53D8;&#x91CF;
+        return count[0]
+    # &#x8FD4;&#x56DE;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;
+    return inner
+
+out = outer(5)
+print(out())
+</code></pre><pre><code>6
+</code></pre><h2 id="&#x88C5;&#x9970;&#x5668;">&#x88C5;&#x9970;&#x5668;</h2>
+<pre><code>def w1(func):
+    print(&apos;&#x6B63;&#x5728;&#x88C5;&#x9970;&apos;)
+    def inner():
+        print(&apos;&#x6B63;&#x5728;&#x9A8C;&#x8BC1;&#x6743;&#x9650;&apos;)
+        func()
+    return inner
+
+@w1
+def f1():
+    print(&apos;f1&apos;)
+
+f1()
+</code></pre><pre><code>&#x6B63;&#x5728;&#x88C5;&#x9970;
+&#x6B63;&#x5728;&#x9A8C;&#x8BC1;&#x6743;&#x9650;
+f1
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./pythongao-ji.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Python提高"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
