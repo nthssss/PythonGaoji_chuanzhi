@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [复习大纲](pythongao-ji-hui-gu.md)
+* [大纲](pythongao-ji-hui-gu.md)
 * [网络-UDP](wang-7edc-udp/README.md)
   * [IP地址、端口](wang-7edc-udp/duan-kou.md)
   * [UDP网络程序-发送、接收数据](wang-7edc-udp/udpwang-luo-cheng-5e8f-fa-song-3001-jie-shou-shu-ju.md)
