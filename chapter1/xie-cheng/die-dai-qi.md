@@ -1,10 +1,10 @@
-#迭代器
----
-## 判断可迭代对象的方式
-01 是否for循环
-02 isinstance(对象, Iterable)
+# 迭代器
 
-```
+## 判断可迭代对象的方式
+
+01 是否for循环 02 isinstance\(对象, Iterable\)
+
+```text
 '''
 ## 判断前面的对象是否是后面指定的类型
 isinstance(3, float)
@@ -30,10 +30,10 @@ if __name__ == '__main__':
     func("int", 1)
     func("自定义对象", StudentList())
 ```
+
 ## 通过迭代器获取斐波那契数列
 
-
-```
+```text
 class Fibonacci(object):
     def __init__(self, num):
         self.num = num
@@ -62,7 +62,5 @@ if __name__ == '__main__':
     # print(next(fib))
     for i in fib:
         print(i)
-
 ```
-
 

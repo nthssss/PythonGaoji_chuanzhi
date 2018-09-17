@@ -1,8 +1,6 @@
 # UDP绑定端口问题
----
 
-
-```
+```text
 import socket
 
 if __name__ == '__main__':

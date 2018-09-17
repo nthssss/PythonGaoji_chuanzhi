@@ -1,8 +1,6 @@
 # TCP网络程序-服务器
----
 
-
-```
+```text
 import socket
 
 if __name__ == '__main__':
@@ -35,5 +33,4 @@ if __name__ == '__main__':
     # 关闭套接字 不再等待其他新的客户端何其建立连接
     tcp_server_socket.close()
 ```
-
 

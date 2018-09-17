@@ -1,3 +1,4 @@
 # 浏览器和服务器之间的交互
----
-![](/assets/屏幕快照 2018-05-13 下午2.27.10.png)
+
+![](../.gitbook/assets/ping-mu-kuai-zhao-20180513-xia-wu-2.27.10.png)
+

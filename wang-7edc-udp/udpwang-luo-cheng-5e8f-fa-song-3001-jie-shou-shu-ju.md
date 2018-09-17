@@ -1,9 +1,8 @@
 # UDP网络程序-发送、接收数据
----
+
 ## UDP发送数据
 
-
-```
+```text
 # 导入模块
 import socket
 
@@ -27,14 +26,11 @@ if __name__ == '__main__':
     upd_socket.sendto(send_data, ("192.168.106.90", 6666))
     # 关闭套接字
     upd_socket.close()
-
 ```
-
 
 ## UDP接收数据
 
-
-```
+```text
 import socket
 
 if __name__ == '__main__':

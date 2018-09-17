@@ -1,8 +1,6 @@
 # TCP网络程序-客户端
----
 
-
-```
+```text
 # 导入模块
 import socket
 
